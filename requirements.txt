@@ -1,0 +1,7 @@
+streamlit
+llama-index
+chromadb
+langchain
+pypdf
+tqdm
+python-dotenv
