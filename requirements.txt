@@ -5,3 +5,4 @@ langchain
 pypdf
 tqdm
 python-dotenv
+sentence-transformers
