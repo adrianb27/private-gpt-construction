@@ -12,7 +12,9 @@ load_dotenv()
 DATA_DIR = os.getenv("DATA_DIR", "./data")
 CHROMA_DB_DIR = os.getenv("CHROMA_DB_DIR", "./chroma")
 
-Settings.embed_model = OpenAIEmbedding()
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
+
 parser = SimpleNodeParser()
 
 print("Loading documents...")
