@@ -1,0 +1,12 @@
+{
+  "container_start_cmd": "./startup.sh",
+  "volume_mounts": [
+    {"host_path": "models", "container_path": "/workspace/models"},
+    {"host_path": "data", "container_path": "/workspace/data"},
+    {"host_path": "chroma", "container_path": "/workspace/chroma"}
+  ],
+  "ports": [8501],
+  "gpu": "A10G",
+  "template_name": "PrivateGPT for Construction",
+  "template_description": "Self-hosted GPT with drag-and-drop document upload. Built using LLaMA 3, ChromaDB, Streamlit. Optimized for internal construction docs and Q&A."
+}
